@@ -1,0 +1,38 @@
+Aula 2.17
+
+Estrutura do meu programa no Java SE
+
+AULA: - 2.17 – RECEBENDO ENTRADA
+ 
+curso-fundamentos-java-e-orientacao-a-objetos/Aulas/Recebendo entrada de dados/
+
+ import java.util.Scanner;
+
+ public class EntradaDeDados {
+
+         public static void main(String[] args) {
+
+                  Scanner entrada = new Scanner(System.in);
+
+                  System.out.print("Nome: ");
+
+                  String nome = entrada.nextLine();
+
+                  System.out.print("Peso: ");
+
+                  int peso = entrada.nextInt();
+
+                  System.out.print("Altura: ");
+
+                  double altura = entrada.nextDouble();
+
+                  double imc = peso / (altura * altura);
+
+                  System.out.println("IMC de " + nome + ": " + imc);
+
+         }
+
+ 
+
+}
+
